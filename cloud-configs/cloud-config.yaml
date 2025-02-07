@@ -10,7 +10,7 @@ apt:
   sources:
     # Byobu PPA
     byobu-ppa.list:
-      source: "deb [arch=amd64 signed-by=$KEY_FILE] http://ppa.launchpad.net/byobu/ppa/ubuntu focal main"
+      source: "deb [arch=arm64 signed-by=$KEY_FILE] http://ppa.launchpad.net/byobu/ppa/ubuntu focal main"
       keyid: A42A415B4677D2D22EB05723CF5E7496F430BBA5
     # Kubernetes
     kubernetes.list:
@@ -22,11 +22,11 @@ apt:
       keyid: 9DC858229FC7DD38854AE2D88D81803C0EBFCD88
     # Git PPA
     git.list:
-      source: "deb [arch=amd64 signed-by=$KEY_FILE] http://ppa.launchpad.net/git-core/ppa/ubuntu $RELEASE main"
+      source: "deb [arch=arm64 signed-by=$KEY_FILE] http://ppa.launchpad.net/git-core/ppa/ubuntu $RELEASE main"
       keyid: F911AB184317630C59970973E363C90F8F1B6217
     # Terraform
     terraform.list:
-      source: "deb [arch=amd64 signed-by=$KEY_FILE] https://apt.releases.hashicorp.com $RELEASE main"
+      source: "deb [arch=arm64 signed-by=$KEY_FILE] https://apt.releases.hashicorp.com $RELEASE main"
       keyid: 798AEC654E5C15428C8E42EEAA16FCBCA621E701
 
 # Install additional packages on first boot
